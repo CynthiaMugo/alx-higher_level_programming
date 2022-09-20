@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-number = 0
+num = 0
 while num <= 89:
     if num % 10 == 0:
         num += 1 + num // 10
