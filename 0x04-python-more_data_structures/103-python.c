@@ -6,7 +6,7 @@
  * @p: Python Object
  * Return: no return
  */
-void print_python_bytes(PyOnject *p)
+void print_python_bytes(PyObject *p)
 {
 	char *string;
 	long int size, i, limit;
