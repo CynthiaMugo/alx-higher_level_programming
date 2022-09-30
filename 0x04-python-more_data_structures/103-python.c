@@ -29,7 +29,7 @@ void print_python_bytes(PyObject *p)
 	else
 		limit = size + 1;
 
-	printf("  First %ld bytes:", limit);
+	printf("  first %ld bytes:", limit);
 
 	for (i = 0; i < limit; i++)
 		if (string[i] >= 0)
@@ -54,7 +54,7 @@ void print_python_list(PyObject *p)
 	size = ((PyVarObject *)(p))->ob_size;
 	list = (PyListObject *)p;
 
-	printf("[*] Python list ino\n");
+	printf("[*] Python list info\n");
 	printf("[*] Size of the Python List = %ld\n", size);
 	printf("[*] Allocated = %ld\n", list->allocated);
 
