@@ -3,10 +3,10 @@
 
 
 class Rectangle:
-    """Rep a rectangle
+    """Represent a rectangle.
 
     Attributes:
-        number_of_instances (int): The no of Rectangle instances
+        number_of_instances (int): The no of Rectangle instances.
         print_symbol (any): The symbol used for string representation.
     """
 
