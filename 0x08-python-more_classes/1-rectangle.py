@@ -6,10 +6,10 @@ class Rectangle:
     """Rep a rectangle."""
 
     def __init__(self, width=0, height=0):
-        """Initialize a nre Rectangle.
+        """Initialize a new Rectangle.
 
         Args:
-            width (int): the width of the nw rectangle.
+            width (int): the width of the new rectangle.
             height (int): the height of the new rectangle.
         """
         self.width = width
@@ -33,7 +33,7 @@ class Rectangle:
         """Get/set the height of the rectangle."""
         return self.__height
 
-    @heigh.setter
+    @height.setter
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
