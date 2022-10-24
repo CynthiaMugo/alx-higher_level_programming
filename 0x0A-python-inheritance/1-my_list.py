@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-contains the MList class
+contains the MyList class
 """
 
 
