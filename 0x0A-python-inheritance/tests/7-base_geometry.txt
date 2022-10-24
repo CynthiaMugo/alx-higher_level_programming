@@ -30,7 +30,7 @@ Checking too many arguments for area:
 	>>> b.area(1)
 	Traceback (most recent call last):
 	...
-	TypeError: are() takes 1 positional argument but 2 were given
+	TypeError: area() takes 1 positional argument but 2 were given
 
 Checking integer validator for passing integer:
 	>>> b.integer_validator("integer", 1)
@@ -85,6 +85,10 @@ Checking for non-integer types:
 	...
 	TypeError: frozenset must be an integer
 	>>> b.integer_validator("bytes", b"bytes")
+	Traceback (most recent call last):
+	...
+	TypeError: bytes must be an integer
+	>>> b.integer_validator("bytearrays", bytearray(b"bytes"))
 	Traceback (most recent call last):
 	...
 	TypeError: bytearrays must be an integer
