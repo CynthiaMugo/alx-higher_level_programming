@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     try:
         for line in sys.stdin:
-            if count == 0:
+            if count == 10:
                 print_stats(size, status_codes)
                 count = 1
             else:
@@ -45,7 +45,9 @@ if __name__ == "__main__":
             try:
                 if line[-2] in valid_codes:
                     if status_codes.get(line[-2], -1) == -1:
-                        status_code[line[-2]] += 1
+                        status_codes[line[-2]] = 1
+                    else:
+                        status_codes[line[-2]] += 1
             except IndexError:
                 pass
 
