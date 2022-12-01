@@ -6,7 +6,7 @@
 -- The database name will be passed as an argument of the mysql command
 
 SELECT t.`title`, g.`name`
-  FROM `tv_shows` AS T
+  FROM `tv_shows` AS t
 	LEFT JOIN `tv_show_genres` AS s
 	ON t.`id` = s.`show_id`
 
